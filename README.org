@@ -1,12 +1,6 @@
 * hypriotos-k8s-setup
 
 
-https://blog.hypriot.com/downloads/
-https://blog.hypriot.com/post/setup-kubernetes-raspberry-pi-cluster/
-https://qiita.com/MahoTakara/items/2b39e06f077927bafa2c
-https://raspberrypi.stackexchange.com/questions/37971/changing-hostname-undone-on-reboot?rq=1
-
-
 
 ** 1. copy os image
 #+BEGIN_SRC sh
@@ -98,3 +92,12 @@ kubectl apply -f <(curl -s https://raw.githubusercontent.com/coreos/flannel/v0.9
 # this command is indicated when kubeadm init
 sudo kubeadm join 10.0.0.1:6443 --toke...
 #+END_SRC
+
+
+** Reference
+
+https://blog.hypriot.com/downloads/
+https://blog.hypriot.com/post/setup-kubernetes-raspberry-pi-cluster/
+https://qiita.com/MahoTakara/items/2b39e06f077927bafa2c
+https://raspberrypi.stackexchange.com/questions/37971/changing-hostname-undone-on-reboot?rq=1
+
